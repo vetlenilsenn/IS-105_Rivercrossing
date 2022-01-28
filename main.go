@@ -18,7 +18,6 @@ func main() {
 	fmt.Println("Hvem vil du sende over for å løse dette? (korn, kylling, rev)")
 
 	for {
-		
 		scanner.Scan()
 		text := scanner.Text()
 		if(text != "kylling"){

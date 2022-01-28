@@ -20,7 +20,6 @@ func ViewState() {
 }
 
 func PutIn() {
-
 	for i, v := range landVest {
     if v == "Kylling" {
         landVest = append(landVest[:i], landVest[i+1:]...)
