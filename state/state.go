@@ -1,18 +1,18 @@
 package state
 
-import "fmt"
-import "strings"
+import (
+	"fmt"
+	"strings"
+	event "github.com/vetlenilsenn/IS-105_Rivercrossing/event"
+)
 
-var landVest = []string{"Korn", "Kylling", "Rev", "Korn"}
-var båt = []string{}
-var landØst = []string{}
 
 
 func ViewState() {
 	fmt.Print("LandVest: ")
-	fmt.Println(strings.Join(landVest, " | "))
+	fmt.Println(strings.Join(event.landVest(), " | "))
 	fmt.Print("Båt: ")
-	fmt.Println(strings.Join(båt, " | "))
+	fmt.Println(strings.Join(event.båt(), " | "))
 	fmt.Print("LandØst: ")
-	fmt.Println(strings.Join(landØst, " | "))
+	fmt.Println(strings.Join(event.landØst(), " | "))
 }
