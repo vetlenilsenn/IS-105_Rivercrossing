@@ -1,17 +1,12 @@
 package main
 
 import (
-	"fmt"
-	"strings"
+	state "github.com/vetlenilsenn/IS-105_Rivercrossing/state"
 )
 
-var landVest = []string{"Korn", "Kylling", "Rev", "Korn"}
-var båt = []string{}
-var landØst = []string{}
 
 func main() {
 
-	state()
+	state.state()
 
-	fmt.Print("Gå alene i båten? ")
 }
