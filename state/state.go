@@ -1,6 +1,13 @@
 package state
 
-func ViewState() string {
-    // Sjekke data som er lagret ("kylling til venstre", "rev til venstre")
-    return "[kylling rev korn hs ---\\ \\__/ _________________/---]"
+import "fmt"
+import "strings"
+
+func state() {
+	fmt.Print("LandVest: ")
+	fmt.Println(strings.Join(landVest, " | "))
+	fmt.Print("Båt: ")
+	fmt.Println(strings.Join(båt, " | "))
+	fmt.Print("LandØst: ")
+	fmt.Println(strings.Join(landØst, " | "))
 }

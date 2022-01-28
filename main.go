@@ -1,9 +1,17 @@
 package main
 
 import (
-   "fmt"
+	"fmt"
+	"strings"
 )
 
+var landVest = []string{"Korn", "Kylling", "Rev", "Korn"}
+var båt = []string{}
+var landØst = []string{}
+
 func main() {
-   fmt.Println("hei");
+
+	state()
+
+	fmt.Print("Gå alene i båten? ")
 }
