@@ -12,18 +12,27 @@ func main() {
 
 	scanner := bufio.NewScanner(os.Stdin)
 
+	fmt.Print("\033[H\033[2J")
+	fmt.Println("------------------------")
+	state.ViewState()
+	fmt.Println("Hvem vil du sende over for å løse dette? (korn, kylling, rev)")
 
 	for {
 		
-		state.ViewState()
-		fmt.Println("Hva vil du sende over? --> kylling, rev eller korn")
 		scanner.Scan()
 		text := scanner.Text()
 		if(text != "kylling"){
 			fmt.Print("\033[H\033[2J")
-			fmt.Println("Du kan ikke sende over det!")
+			fmt.Println("------------------------")
+			state.ViewState()
+			fmt.Println("Hvem vil du sende over for å løse dette? (korn, kylling, rev)")
+			fmt.Println("!!!Du kan ikke sende over det, skriv på nytt!!!")
 			continue
 		}
+		fmt.Print("\033[H\033[2J")
+		fmt.Println("Du sender over kylling")
+		fmt.Println("------------------------")
+		state.ViewState()
 		state.PutIn()
 		state.ViewState()
 		state.Crossriver()
