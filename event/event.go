@@ -1,3 +1,9 @@
+package event
+
+import (
+	"fmt"
+)
+
 var landVest = []string{"Korn", "Kylling", "Rev", "Korn"}
 var båt = []string{}
 var landØst = []string{}
