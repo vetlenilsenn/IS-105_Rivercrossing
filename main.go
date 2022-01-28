@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	state.state()
+	state.ViewState()
 
 }

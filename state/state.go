@@ -8,7 +8,7 @@ var båt = []string{}
 var landØst = []string{}
 
 
-func state() {
+func ViewState() {
 	fmt.Print("LandVest: ")
 	fmt.Println(strings.Join(landVest, " | "))
 	fmt.Print("Båt: ")
